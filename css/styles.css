@@ -376,7 +376,7 @@ body {
   color: #e2e8f0;
 }
 .form-group input,.form-group select{
-  padding: 0.8;
+  padding: 0.8rem;
   border-radius: 10px;
   border: none;
   background: rgba(255, 255, 255, 0.1);
