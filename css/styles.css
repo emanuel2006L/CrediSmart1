@@ -402,7 +402,7 @@ body {
   font-size: 1.1rem;
   
 }
-.btn-primary :hover{
+.btn-primary:hover{
   background-color: #019ab2;
   transform: scale(1.02);
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
