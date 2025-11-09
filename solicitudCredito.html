@@ -1,0 +1,83 @@
+!<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solicitud credito</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo">💳CrediSmart</h1>
+        <ul class="menu">
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./search.html">Simular credito</a></li>
+          <li><a href="./solicitudCredito.html">Solicitar Credito</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="solicitud-container">
+      <div class="solicitud-card">
+        <h3>Solicitd de credito</h3>
+        <p>Completa los datos para enviar tu solicitud</p>
+
+        <form class="solicitud-form" onsumit="return false">
+          <h4>Datos Personales</h4>
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" placeholder="Ej: Emanuel Lenis" />
+          </div>
+
+          <div class="form-group">
+          <label for="documento">Tipo de documento</label>
+          <select id="documento" required>
+            <option value="">Seleccione</option>
+            <option value="CC">Cedula de ciudadania</option>
+            <option value="CE">Cedula extranjera</option>
+          </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="Telefono">Numero telefonico</label>
+            <input type="text" id="telefono" placeholder="Ej: 3207875462" required>
+
+          </div>
+
+          <div class="form-group">
+            <label for="Correo">Correo electronico</label>
+            <input type="text" id="correo" placeholder="Ej: juanPorras@gmail"required
+          </div>
+
+          <h4>Datos del credito</h4>
+          <div class="form-group">
+            <label for="Tipo de credito">Tipo de credito</label>
+            <select id="tipoCredito" required>
+              <option value="Libre inversion">Libre inversion</option>
+              <option value="Vivienda">Vivienda</option>
+              <option value="Vehiculo">Vehiculo</option>
+              <option value="Educativo">Empresarial</option>
+              <option value="Educativo">Educativo</option>
+              <option value="Salvavidas">Salvavidas</option>
+             
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="monto">Monto solicitado</label>
+            <input type="number" id="monto" placeholder="Ej: 20000000">
+
+          </div>
+          <div class="form-group">
+            <label for="Plazo">Plazo en meses</label>
+            <input type="number" id="plazo" placeholder="Ej: 24" required>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn-primary">Enviar solicitud</button>
+          </div>
+        
+      </div>
+    </section>
+  </body>
+</html>

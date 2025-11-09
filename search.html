@@ -1,0 +1,62 @@
+!<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo">💳CrediSmart</h1>
+        <ul class="menu">
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./search.html">Simular credito</a></li>
+          <li><a href="./solicitudCredito.html">Solicitar Credito</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="filter-container">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Buscar credito por nombre"
+      />
+      <select id="montoSeleccionado">
+        <option value="Todos">Filtar por monto</option>
+        <option value="500k-10M">De 500Mil a 10 millones</option>
+        <option value="10M-50M">De 10 millones a 50 millones</option>
+        <option value="50M-200M">De 50 millones a 200 Millones</option>
+        <option value="200M-1000M">De 200 millones a 1 Mil millones</option>
+      </select>
+    </section>
+    <section class="simulador-card-container">
+      <div class="credits-card-simulador">
+        <h3>Simula tu credito</h3>
+        <p>Indica tipo y monto del credito</p>
+        <form class="simulador-form" onsubmit="return false">
+          <div class="form-group">
+            <label for="TipoCredito">Tipo de credito</label>
+            <input
+              id="TipoCredito"
+              type="text"
+              placeholder="Ej: Vivienda, Vehiculo"
+            />
+          </div>
+          <div class="form-group">
+            <label for="montoCredito">Monto que desea consultar</label>
+            <input id="montoCredito" type="number" placeholder="Ej: 50000000">
+          </div>
+          <div class="form-actions">
+            <button type="button" class="btn-primary">Simular</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="credits-container">
+      <h3>Resultados</h3>
+      <div class="credits-grid" id="creditsContainer"></div>
+    </section>
+  </body>
+</html>
