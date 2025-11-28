@@ -6,51 +6,47 @@
 }
 
 body {
-  font-family: "Segoe IU", "Times New Roman", sans-serif;
-  background-color: #fffbfb;
-  color: #f3f4f6;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background-color: #f5f7fa;
+  color: #2c2c2c;
   line-height: 1.6;
 }
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
+
 /* NAVEGACION */
 
 .navbar {
-  background: linear-gradient(145deg, #000000 0%, #1a2b4c 100%);
+  background: linear-gradient(145deg, #ffffff 0%, #d9e4ff 100%);
   backdrop-filter: blur(6px);
   padding: 0.7rem 0;
   position: sticky;
   top: 0;
-  margin-bottom: 0.5rem;
-  margin-bottom: 0.5rem;
   border-radius: 0 0 15px 15px;
   z-index: 1000;
   width: 100%;
-  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
+
 .navbar .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-@media (max-width: 768px) {
-  .navbar .container {
-    width: 100%;
-    overflow-x: hidden;
-  }
-}
+
 .logo {
-  color: white;
-  text-shadow: 1px 1px 5px rgb(255, 255, 255, 0.4);
+  color: #2a3d8f;
   font-size: 1.6rem;
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
+
 .logo:hover {
-  transform: scale(1.07);
+  transform: scale(1.03);
 }
 
 .menu {
@@ -58,136 +54,130 @@ body {
   list-style: none;
   gap: 2rem;
 }
-@media (max-width: 768px) {
-  .menu {
-    flex-direction: column;
-    gap: 1rem;
-  }
-}
+
 .menu a {
-  color: #e5e7eb;
+  color: #3b4a78;
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.5s ease;
-  font-size: 1.1rem;
-  text-transform: uppercase;
-}
-.menu a:hover {
-  color: #00fcfc;
-  text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);
+  transition: 0.3s ease;
+  font-size: 1.05rem;
+  
 }
 
 .menu a:hover,
 .menu a.active {
-  color: #00cae9;
-  transform: scale(2px);
+  color: #002fff;
+  
+}
+.menu a:hover{
+  transform: scale(1.03);
 }
 
 /* BANNER PRINCIPAL */
 .hero {
-  background: linear-gradient(145deg, #000000 0%, #1a2b4c 100%);
-  color: #ffffff;
+  background: linear-gradient(145deg, #ffffff 0%, #e4e9ff 100%);
+  color: #2c2c2c;
   text-align: center;
-  padding: 0rem 1rem;
+  padding: 2rem 1rem;
   border-radius: 13px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
 }
 
 .hero h2 {
   font-size: 2rem;
-  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
   margin-bottom: 1rem;
   font-weight: 800;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
+  color: #2a3d8f;
 }
+
 .hero p {
-  font-size: 1.3rem;
-  opacity: 0.87;
-  color: #cbd5e1;
+  font-size: 1.1rem;
+  color: #55627d;
   max-width: 700px;
   margin: 0 auto;
-  line-height: ;
 }
+
+/* CREDITOS */
 .credits-section {
   padding: 0.5rem 1rem;
-  color: #f1f5f9;
+  color: #2c2c2c;
   text-align: center;
 }
+
 .credits-section h3 {
-  font-size: 3rem;
-  font-weight: 600;
-  color: rgb(0, 0, 0);
-  text-shadow: 1px 1px 5px rgb(6, 208, 218);
-  margin-bottom: 5rem;
-  letter-spacing: 2px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2a3d8f;
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
 }
+
 .credits-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  margin-bottom: 2rem;
 }
+
 .credits-card {
-  background: linear-gradient(145deg, #000000 0%, #1a2b4c 100%);
+  background: #ffffff;
   border-radius: 20px;
   padding: 2rem;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
+
 .credits-card:hover {
-  transform: translate(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
-  background-color: #95aff7;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
+
 .credits-card p {
-  color: #94a3c1;
+  color: #55627d;
 }
+
 .credits-card img {
   width: 180px;
   height: 160px;
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 1rem;
-  border: 1 px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
+
 .card-header {
   display: flex;
   align-items: center;
   gap: 0.8rem;
   margin-bottom: 1rem;
 }
-.icon {
-  font-size: 4rem;
-}
+
 .card-header h4 {
   font-size: 1.3rem;
-  color: #ffffff;
-  text-align: center;
-  text-shadow: 1px 1px 5px rgb(19, 0, 233);
+  color: #2a3d8f;
 }
-.detalles {
-  color: #6e7c99;
-  margin-bottom: 1.5rem;
-}
+
 .details-item {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 0;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #d9d9d9;
 }
-.label {
-  color: #ffffff;
-  font-size: 0.9rem;
-}
+
+.label,
 .value {
-  font-weight: 600;
-  color: #ffffff;
+  color: #2c2c2c;
 }
+
+.value-highlight {
+  color: #2a3d8f;
+  font-weight: 600;
+}
+
 .btn-primary {
-  background-color: #000000;
+  background-color: #2a3d8f;
   color: white;
   cursor: pointer;
   width: 100%;
@@ -197,213 +187,223 @@ body {
   font-weight: 600;
   transition: all 0.3s;
 }
+
 .btn-primary:hover {
-  background-color: #ccced2;
+  background-color: #1e2f6c;
 }
-.value-highlight {
-  color: #00ff51;
-}
-/* Estilos simulador de credito */
+
+/* SIMULADOR */
 .simulador-card-container {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 90vh;
-  background: #f8fafc;
+  background: #f2f5ff;
   padding: 2rem;
 }
 
 .credits-card-simulador {
-  background: linear-gradient(145deg, #000000, #1a2b4c);
-  color: white;
-  padding: 2rem 6rem;
+  background: #ffffff;
+  color: #2c2c2c;
+  padding: 2rem 4rem;
   border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
   width: 80%;
   max-width: 600px;
-  backdrop-filter: blur(6px);
 }
 
 .credits-card-simulador h3 {
-  font-size: 3.5rem;
+  font-size: 2.8rem;
   text-align: center;
   margin-bottom: 0.5rem;
-  text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+  color: #2a3d8f;
 }
 
 .credits-card-simulador p {
   text-align: center;
-  color: #a4b5d5;
+  color: #55627d;
   margin-bottom: 2rem;
-}
-
-.simulador-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
 }
 
 .form-group label {
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: #e2e8f0;
+  color: #2c2c2c;
 }
 
-.form-group input {
-  padding: 0.8rem;
+.form-group input,
+.form-group select {
+  width: 280px;        
+  height: 45px;      
+  padding: 0.6rem 1rem;
   border-radius: 10px;
-  border: none;
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
   font-size: 1rem;
-  outline: none;
-}
-
-.form-group input::placeholder {
-  color: #94a3c1;
+  color: #333;
 }
 
 .form-actions {
   margin-top: 2rem;
 }
 
-.btn-primary {
-  background-color: #04f8f8;
-  color: #000000;
-  border: none;
-  padding: 0.8rem;
-  border-radius: 10px;
-  width: 100%;
-  font-weight: 600;
-  font-size: 1.1rem;
-}
-
-.btn-primary:hover {
-  background-color: #019ab2;
-  transform: scale(1.02);
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
-}
-
+/* FILTRO */
 .filter-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
   padding: 1.5rem 1rem;
   margin: 1.5rem 0;
-  background: linear-gradient(145deg, #000000 0%, #1a2b4c 100%);
+  background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
-.filter-container input {
+
+.filter-container input,
+.filter-container select {
   padding: 0.7rem 1rem;
   border-radius: 10px;
-  border: none;
-  outline: none;
-  background-color: rgba(255, 255, 255, 0.05);
-  color: #e5f2ff;
+  border: 1px solid #cfd5e6;
+  background-color: #f9fbff;
+  color: #2c2c2c;
   font-size: 1rem;
-  min-width: 250px;
-  box-shadow: inset 0 1px 4px rgba(209, 205, 205, 0.4);
 }
-.filter-container input::placeholder{
-  color: #94a3c1;
-}
-.filter-container select{
-  padding: 0.7rem 1rem;
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  background-color: rgba(255, 255, 255, 0.05);
-  color: #e5f2ff;
-  font-size: 1rem;
-  box-shadow: inset 0 1px 4px rgba(209, 205, 205, 0.4);
-  cursor: pointer;
-}
-.solicitud-container{
+
+/* SOLICITUD */
+.solicitud-container {
   display: flex;
   justify-content: center;
   min-height: 90vh;
-  background: #f8fafc;
+  background: #f2f5ff;
   padding: 2rem;
 }
-.solicitud-card{
-  background:linear-gradient(145deg, #000000, #1a2b4c) ;
-  color: white;
-  padding: 2rem 6rem;
+
+.solicitud-card {
+  background: #ffffff;
+  color: #2c2c2c;
+  padding: 2rem 4rem;
   border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   width: 80%;
   max-width: 600px;
-  backdrop-filter: blur(6px);
 }
-.solicitud-card h3{
-  font-size: 3.5rem;
+
+.solicitud-card h3 {
+  font-size: 2.8rem;
   text-align: center;
   margin-bottom: 0.5rem;
-  text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+  color: #2a3d8f;
 }
 .solicitud-card p{
-  text-align: center;
-  color: #a4b5d5;
-  margin-bottom: 2rem;
+  padding: 1rem;
+  font-size: 1.25rem;
 }
-.solicitud-card h4{
+
+.solicitud-card h4 {
   margin-top: 2rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
-  color: #00fcfc;
-  text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+  color: #2a3d8f;
 }
-.simulador-form{
-  display: flex;
-  flex-direction: column;
-  gap:1.2rem
+
+label {
+  display: inline-block;
+  width: 180px;     
+  font-size: 1rem;  
+  font-weight: 600; 
+  color: #1e2a44;
 }
+.credits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.credits-card,
+.credits-card-simulador,
+.solicitud-card {
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem 4rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 .form-group {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
-.form-group label{
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #e2e8f0;
-}
-.form-group input,.form-group select{
-  padding: 0.8rem;
-  border-radius: 10px;
-  border: none;
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  font-size: 1rem;
-  outline: none;
 
-}
-.form-group input::placeholder{
-  color: #94a3c1;
-}
-.form-actions{
-  margin-top: 2rem;
-}
-.btn-primary{
-  background-color: #00fcfc;
-  color: #000000;
-  border: none;
-  padding: 0.8rem;
-  border-radius: 10px;
-  width: 100%;
+label {
+  display: inline-block;
+  width: 180px;
+  min-width: 120px;
   font-weight: 600;
-  font-size: 1.1rem;
-  
+  color: #1e2a44;
 }
-.btn-primary:hover{
-  background-color: #019ab2;
-  transform: scale(1.02);
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+
+.form-group input,
+.form-group select {
+  flex: 1 1 200px;
+  min-width: 150px;
+  height: 45px;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  font-size: 1rem;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+.hero p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .credits-card,
+  .credits-card-simulador,
+  .solicitud-card {
+    padding: 1.5rem;
+  }
+
+  .form-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  label {
+    width: 100%;
+  }
+
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    height: 42px;
+  }
+
+  .hero h2 {
+    font-size: 1.4rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .credits-card-simulador h3,
+  .solicitud-card h3 {
+    font-size: 1.8rem;
+  }
+  .solicitud-card h4 {
+    font-size: 1.5rem;
+  }
 }
